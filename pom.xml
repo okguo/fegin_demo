@@ -14,7 +14,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>monitor</module>
-        <module>produce</module>
+        <module>producer</module>
         <module>consumer</module>
     </modules>
 
