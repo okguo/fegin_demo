@@ -12,4 +12,49 @@ public class Book {
     private String company;
     private Double price;
     private Integer pages;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public Book setId(Integer id) {
+        this.id = id;
+        return this;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Book setName(String name) {
+        this.name = name;
+        return this;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public Book setCompany(String company) {
+        this.company = company;
+        return this;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public Book setPrice(Double price) {
+        this.price = price;
+        return this;
+    }
+
+    public Integer getPages() {
+        return pages;
+    }
+
+    public Book setPages(Integer pages) {
+        this.pages = pages;
+        return this;
+    }
 }
