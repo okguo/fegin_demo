@@ -7,6 +7,7 @@ import com.okguo.vo.OrderInfoVO;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -18,7 +19,7 @@ import java.util.List;
 @Service
 public class OrderService {
 
-    static List<Order> orders;
+    static List<Order> orders = new ArrayList<Order>();
 
     static {
         Order order1 = new Order().setId(9001).setProductId(1001).setOrderNo("o-9001").setPayTime("2020-02-05 17:26:13");

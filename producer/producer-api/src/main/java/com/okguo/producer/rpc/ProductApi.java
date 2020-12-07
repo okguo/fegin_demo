@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.PostMapping;
  * @Author: Guoyongfu
  * @Date: 2020/12/05 17:09
  */
-@FeignClient(value = "productApi")
+@FeignClient(value = "fegin-producer", fallback = Exception.class)
 public interface ProductApi {
 
-    @PostMapping("productApi/{id}")
-    Product queryById(@PathVariable Integer id);
+    @PostMapping("api/product/{id}")
+    Product queryById(@PathVariable(value = "id") Integer id);
 }

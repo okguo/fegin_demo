@@ -4,6 +4,7 @@ import com.okguo.producer.domain.Product;
 import com.okguo.producer.rpc.ProductApi;
 import com.okguo.service.ProductService;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
@@ -12,7 +13,7 @@ import javax.annotation.Resource;
  * @Author: Guoyongfu
  * @Date: 2020/12/05 17:33
  */
-@Component
+@RestController
 public class ProductApiImpl implements ProductApi {
 
     @Resource

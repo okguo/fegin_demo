@@ -3,6 +3,7 @@ package com.okguo.service;
 import com.okguo.producer.domain.Product;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -14,7 +15,7 @@ import java.util.List;
 @Service
 public class ProductService {
 
-    static List<Product> products;
+    static List<Product> products = new ArrayList<Product>();
 
     static {
         Product product1 = new Product().setId(1001).setName("商品1001").setDescription("商品1001的描述").setProductionDate(new Date());

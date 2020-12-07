@@ -19,5 +19,13 @@
         <module>consumer-provider</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <version>2.2.0.RELEASE</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
